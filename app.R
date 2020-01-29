@@ -80,13 +80,13 @@ ui <- dashboardPage(title = 'This is my Page title', header, sidebar, body,skin=
 server <- function(input, output){
     
     #Save app credentials for access to tweets
-    consumerKey <- "TLwcYDEblVFgtDIqeqGXY05zH"
+    consumerKey <- "XXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
     
-    consumerSecret <- "Wpy8VEH6eGliqisMCNonqC7q9Z3YrxpmjxkiIyMdSj8qsocdSw"
+    consumerSecret <- "XXXXXXXXXXXXXXXXXXXXXXXXX"
     
-    accessToken <- "1097552545411678208-zIYNJm6l1aOwxUwCtLbgbpmjGciJtp"
+    accessToken <- "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
     
-    accessTokenSecret <-  "d3V7AQ2BSkcj5qCZIjuSeuOPpsfUfM3eRb1YyMmlLdoPG"
+    accessTokenSecret <-  "XXXXXXXXXXXXXXXXXXXXXXXXXXX"
     
     #set up 
     setup_twitter_oauth(consumerKey,consumerSecret,accessToken,accessTokenSecret)
@@ -223,7 +223,5 @@ server <- function(input, output){
 }
 
 shinyApp(ui = ui, server = server)
-library(profvis)
-library(shiny)
-profvis(runApp())
+
 
